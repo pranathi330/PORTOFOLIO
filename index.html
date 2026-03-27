@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pranathi Kyatham | Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+<header>
+    <nav class="navbar">
+        <h2 class="logo">Pranathi Kyatham</h2>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<!-- HERO -->
+<section id="home" class="hero">
+    <div class="hero-container">
+
+        <div class="profile-img">
+            <img src="passphoto.jpg" alt="Pranathi Kyatham">
+        </div>
+
+        <div class="hero-text">
+            <h1>Hi, I'm <span>Pranathi Kyatham</span></h1>
+            <p>Computer Science Engineer | Python Developer | Web Developer</p>
+            <a href="#contact" class="btn">Contact Me</a>
+        </div>
+
+    </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="section">
+    <h2>About Me</h2>
+    <p>
+        Highly motivated Computer Science graduate passionate about
+        Python, Web Development and Machine Learning.
+    </p>
+</section>
+
+<!--EDUCATION-->
+<!-- EDUCATION -->
+<section id="education" class="section light">
+    <h2>Education</h2>
+
+    <div class="card">
+        <h3>B.Tech - Computer Science Engineering</h3>
+        <p>Gokaraju Lailavathi Women’s Engineering College</p>
+        <p>CGPA: 8.1</p>
+    </div>
+
+    <div class="card">
+        <h3>Diploma - Civil Engineering</h3>
+        <p>Warangal Institute of Technology & Science</p>
+        <p>CGPA: 8.56</p>
+    </div>
+
+    <div class="card">
+        <h3>SSC</h3>
+        <p>Little Flower High School</p>
+        <p>CGPA: 10.0</p>
+    </div>
+</section>
+<!-- SKILLS -->
+<section id="skills" class="section light">
+    <h2>Technical Skills</h2>
+
+    <div class="skills-container">
+
+        <div class="skill-card" onclick="showSkill('python')">
+            <i class="fab fa-python"></i>
+            <h3>Python</h3>
+        </div>
+
+        <div class="skill-card" onclick="showSkill('html')">
+            <i class="fab fa-html5"></i>
+            <h3>HTML</h3>
+        </div>
+
+        <div class="skill-card" onclick="showSkill('css')">
+            <i class="fab fa-css3-alt"></i>
+            <h3>CSS</h3>
+        </div>
+
+        <div class="skill-card" onclick="showSkill('js')">
+            <i class="fab fa-js"></i>
+            <h3>JavaScript</h3>
+        </div>
+
+        <div class="skill-card" onclick="showSkill('sql')">
+            <i class="fas fa-database"></i>
+            <h3>SQL</h3>
+        </div>
+
+    </div>
+
+    <div id="skill-description" class="skill-description"></div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects" class="section">
+    <h2>Projects</h2>
+
+    <div class="card">
+        <h3>Smart Diet Recommendation System</h3>
+        <p>Developed using Python & Flask with Random Forest model (92% accuracy).</p>
+        <a href="https://github.com/pranathi330/SMART-DIET-RECOMMENDATION-SYSTEM-BY-USING-BMI"
+           target="_blank" class="project-btn">
+           View on GitHub
+        </a>
+    </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="section light">
+    <h2>Contact Me</h2>
+
+    <form id="contact-form">
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email" required>
+        <textarea placeholder="Your Message" required></textarea>
+        <button type="submit" class="btn">Send Message</button>
+        <p id="success-message"></p>
+    </form>
+     <div class="contact-info">
+        <p>Email: pranathi3309@gmail.com</p>
+        <p>Phone: 7780684508</p>
+        <p>Location: Hyderabad</p>
+    </div>
+</section>
+
+<footer>
+    <p>© 2026 Pranathi Kyatham</p>
+</footer>
+
+
+<script src="script.js"></script>
+</body>
+</html>
